@@ -1,0 +1,15 @@
+JQuery plugin for a very simple sliding gallery
+
+usage:
+	$('#container').simpleGallery();
+	
+you can pass an options object with these params:
+	perPage - number of slides perPage (default: 2),
+	scrollPerPage - number of slides to scroll perPage (default: 1),
+	speed - how fast to scroll in ms (default: 200),
+	rightButton - jQuery selector for the rightButton (default: #rightButton),
+	leftButton - jQuery selector for the leftButton (default: #leftButton)
+	
+	
+		
+	

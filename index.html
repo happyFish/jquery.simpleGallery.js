@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<style>
+			body, html{
+				overflow-x: hidden;
+			}
+			#wrapper{
+				width: 1000px;
+				overflow-x: hidden;
+			}
+			#thumbs{
+				width: 8000px;
+				height: 500px;
+			}
+			.thumb:after{
+				clear: both;
+			} 
+			#thumbs img{
+				float: left;
+			}
+		</style>
+	</head>
+<body>
+
+	<img src="img/prev.gif" id="leftButton" alt="" />
+	<img src="img/next.gif" id="rightButton" alt="" />
+	
+	<div id="wrapper">
+		<div id="thumbs">	
+			<span id="thumb1" class="thumb">
+				<img src="http://www.technochitlins.com/mt-archives/030807_hubble_collisions_04.jpg" />
+			</span>
+			
+			<span id="thumb2" class="thumb">
+				<img src="http://www.tehrantimes.com/News/10647/09_NASA%20FI.jpg" />
+			</span>
+			
+			<span id="thumb3" class="thumb">
+				<img src="http://www.ufomafia.com/pics/nasa_ufo_hubble_telescope_picture.jpg" />
+			</span>
+			
+			<span id="thumb4" class="thumb">
+				<img src="http://www.desktop4ipad.com/wp-content/uploads/2010/04/426218main_1592_full-500x500.jpg" />
+			</span>
+			
+		</div>
+	</div>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script> 
+	
+	<script src="jquery.simpleGallery.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$('#thumbs').simpleGallery({perPage: 2, speed: 800, scrollPerPage: 2 });
+		});
+	</script>
+
+	
+	
+</body>
+
+</html>
